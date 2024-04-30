@@ -1,0 +1,87 @@
+<head>
+<style type="text/css">
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+
+strong {
+  font-weight:bold;
+}
+
+p {
+  margin-bottom:6px;
+}
+
+table {
+  width:100% !important;
+  border-width:0px !important;
+}
+
+ol, ul { list-style:none; }
+body {
+  font:16px/1.4 '-apple-system','HelveticaNeue';
+  *font-size:large;
+  color:#312e2b;
+}
+img { max-width: 100%; width: auto; height: auto; }
+.user-content { color:#222222; }
+.user-content h1, .user-content h2, .user-content h3, .user-content h4, .user-content h5, .user-content h6 { margin-bottom:8px; }
+.user-content h2 { font-size:16px; }
+.user-content h3 { font-size:15px; }
+.user-content h4 { font-size:14px; }
+.user-content p {
+  font-size:14px;
+  margin-bottom:6px;
+  line-height:1.4;
+}
+.user-content p em { color:#222222; }
+.user-content img.main {
+  float:right;
+  padding:1em .5em 1em 1em;
+  border:0px;
+}
+.user-content > ul {
+  margin:16px 0px;
+  list-style-type:disc;
+  padding-left:40px;
+  font-size:14px;
+  line-height:1.4;
+}
+.user-content > ol {
+  margin:16px 0px;
+  padding-left:40px;
+  list-style-type:decimal;
+  font-size:14px;
+  line-height:1.4;
+}
+.user-content img { max-width:100%; }
+.user-content:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.image-wrap { position:relative; }
+.fquote {
+  font-size:12px;
+  background:url(http://www.chess.com/images/icons/custom/quote.png) no-repeat #f2f0ed 9px 10px;
+  color:#32302d;
+  margin:10px 0;
+  padding:6px 24px;
+  display:block;
+}
+.fquote .quoted-user {
+  color:#767471;
+  font-weight:bold;
+}
+.fquote .quoted-text p { font-style:italic; }
+.fquote .fquote { border-left:2px solid #dddddd; }
+.fquote .hrhide { display:none; }
+</style>
+</head>

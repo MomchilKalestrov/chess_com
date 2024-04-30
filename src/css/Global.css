@@ -1,0 +1,18 @@
+* {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.Ripple {
+    background-color: transparent;
+    background-position: center;
+    transition: background 0.8s;
+}
+.Ripple:hover {
+    background: #252422 radial-gradient(circle, transparent 1%, #252422 1%) center/15000%;
+}
+
+.Ripple:active {
+    background-color: #474644;
+    background-size: 100%;
+    transition: background 0s;
+}

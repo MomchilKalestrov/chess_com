@@ -1,0 +1,42 @@
+<configuration>
+
+	<!--This block should be disabled for prod. Enable it for dev logs-->
+	<!--<property name="lcc.log.level.info" value="INFO" />
+	<property name="lcc.log.level.debug" value="DEBUG" />
+	<property name="lcc.log.level.warn" value="WARN" />-->
+
+	<!--This block should be enabled for prod. Disable it for dev logs-->
+	<property name="lcc.log.level.info" value="OFF" />
+	<property name="lcc.log.level.debug" value="OFF" />
+	<property name="lcc.log.level.warn" value="OFF" />
+
+	<contextName>com.chess</contextName>
+
+	<appender name="LOGCAT" class="ch.qos.logback.classic.android.LogcatAppender">
+		<encoder>
+			<pattern>%msg</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="LccInternalLogging" level="${lcc.log.level.debug}">
+		<appender-ref ref="LOGCAT" />
+	</logger>
+
+	<logger name="org.eclipse.jetty" level="${lcc.log.level.debug}">
+		<appender-ref ref="LOGCAT" />
+	</logger>
+
+	<logger name="org.cometd" level="${lcc.log.level.debug}">
+		<appender-ref ref="LOGCAT" />
+	</logger>
+
+	<logger name="com.chess.live.client.connection.cometd" level="${lcc.log.level.debug}">
+		<appender-ref ref="LOGCAT" />
+	</logger>
+
+	<!-- PubSub lib -->
+	<!--<logger name="com.chess" level="trace" additivity="false">
+		<appender-ref ref="LOGCAT" />
+	</logger>-->
+
+</configuration>
