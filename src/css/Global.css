@@ -16,3 +16,23 @@
     background-size: 100%;
     transition: background 0s;
 }
+
+.Header {
+    position: fixed;
+    background-color: #252422;
+    width: 100%;
+    height: 112px;
+    margin: 0px;
+    font-size: 48px;
+    line-height: 112px;
+    font-weight: bolder;
+    color: #DEDEDE;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+img.Header {
+    width: 361px;
+    height: 100px;
+    padding: 6px calc(50% - 180.5px) 6px calc(50% - 180.5px);
+}
