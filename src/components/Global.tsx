@@ -2,14 +2,16 @@ import { Component } from 'react';
 import '../css/Global.css';
 
 export class Header extends Component<any, any> {
-    render() {
-        if(this.props.chessTitle)   return (<img className='Header'src='/media/logo.png' alt=''/>);
-        else                        return (<h1 className='Header'>{ this.props.title }</h1>)
-    };
+    render = () =>
+        this.props.chessTitle
+        ?
+        <img className='Header'src='/media/logo.png' alt=''/>
+        :
+        <h1 className='Header'>{ this.props.title }</h1>
 }
 
 export class Container extends Component<any, any> {
-    render = () => <div className='Container'>{this.props.children}</div>
+    render = () => <div className='Container' style={this.props.style}>{this.props.children}</div>
 }
 
 export class Page extends Component<any, any> {
@@ -27,12 +29,23 @@ export class Page extends Component<any, any> {
             style: {
                 display: 'black'
             }
-        };
+        }
     }
 
-    render() {
-        return(
-            <div className='Page' style={this.state.style}>{this.props.children}</div>
-        )
-    };
+    render = () => <div className='Page' style={this.state.style}>{this.props.children}</div>
+}
+
+export class TileButton extends Component<any, any> {
+    render = () =>
+        this.props.titleOnly
+        ?
+        <div className='TileButton Ripple'>{ this.props.title }</div>
+        :
+        <div className='TileButton Ripple'>
+            <img src={ this.props.icon } alt='' />
+            <div>
+                <h5>{ this.props.title }</h5>
+                <p>{ this.props.subtitle }</p>
+            </div>
+        </div>
 }

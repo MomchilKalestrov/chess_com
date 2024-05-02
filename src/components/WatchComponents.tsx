@@ -9,5 +9,5 @@ export class Watch extends Component<any, any> {
             <Container>
 
             </Container>
-        </Page>;
+        </Page>
 }

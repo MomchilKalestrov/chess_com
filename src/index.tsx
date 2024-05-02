@@ -19,6 +19,7 @@ root.render(
     <Learn />
     <Watch />
     <Menu />
+    
     <NavigationMenu />
   </>
 );

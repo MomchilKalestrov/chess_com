@@ -10,5 +10,5 @@ export class Learn extends Component<any, any> {
             <Container>
 
             </Container>
-        </Page>;
+        </Page>
 }

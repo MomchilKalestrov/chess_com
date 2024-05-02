@@ -5,10 +5,10 @@ import '../css/Global.css';
 
 class MenuListing extends Component<any, any> {
     render = () => 
-                <div className='MenuListing'>
-                    <img src={ this.props.icon } alt='' />
-                    <p>{ this.props.option }</p>
-                </div>
+        <div className='MenuListing RippleDiff Ripple'>
+            <img src={ this.props.icon } alt='' />
+            <p>{ this.props.option }</p>
+        </div>
 }
 
 export class Menu extends Component<any, any> {
@@ -28,5 +28,5 @@ export class Menu extends Component<any, any> {
                 <div className='MenuDiv'></div>
                 <MenuListing option='later :)' icon='/media/logo.png' />
             </Container>
-        </Page>;
+        </Page>
 }
