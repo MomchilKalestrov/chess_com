@@ -36,3 +36,25 @@ img.Header {
     height: 100px;
     padding: 6px calc(50% - 180.5px) 6px calc(50% - 180.5px);
 }
+
+.Page {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: calc(100vh - 112px);
+}
+
+.Container {
+    height: calc(100vh - 288px);
+    overflow-y: scroll;
+    padding: 32px;
+    padding-top: 144px;
+    background-color: #312D2A;
+}
+
+body {
+    width: 830px;
+    height: 1670px;
+    margin: 0px;
+    padding: 0px;
+}

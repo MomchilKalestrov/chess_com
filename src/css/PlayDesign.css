@@ -17,14 +17,6 @@
     margin-top: 32px;
 }
 
-.PlayContainer {
-    height: calc(100vh - 288px);
-    overflow-y: scroll;
-    padding: 32px;
-    padding-top: 144px;
-    background-color: #312D2A;
-}
-
 .PlayBoard {
     grid-area: board;
     width: 100%;

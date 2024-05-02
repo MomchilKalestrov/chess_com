@@ -1,16 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import { NavigationMenu } from './components/NavigationComponent';
-import { PlayModesList } from './components/PlayComponent';
+import { NavigationMenu } from './components/NavigationComponents';
+import { Play } from './components/PlayComponents';
+import { Puzzle } from './components/PuzzleComponents';
+import { Learn } from './components/LearnComponents';
+import { Watch } from './components/WatchComponents';
+import { Menu } from './components/MenuComponents';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+
 root.render(
   <>
-    <PlayModesList />
+    <Play />
+    <Puzzle />
+    <Learn />
+    <Watch />
+    <Menu />
     <NavigationMenu />
   </>
 );
