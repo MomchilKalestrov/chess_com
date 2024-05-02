@@ -2,13 +2,19 @@
     font-family: "Segoe UI", sans-serif;
 }
 
+.RippleDiff {
+    --color: #312d2a !important;
+}
+
 .Ripple {
+    --color: #252422;
     background-color: transparent;
     background-position: center;
     transition: background 0.8s;
 }
+
 .Ripple:hover {
-    background: #252422 radial-gradient(circle, transparent 1%, #252422 1%) center/15000%;
+    background: radial-gradient(circle, transparent 1%, var(--color) 1%) center/15000%;
 }
 
 .Ripple:active {
@@ -47,6 +53,7 @@ img.Header {
 .Container {
     height: calc(100vh - 288px);
     overflow-y: scroll;
+    overflow-x: hidden;
     padding: 32px;
     padding-top: 144px;
     background-color: #312D2A;
@@ -57,4 +64,17 @@ body {
     height: 1670px;
     margin: 0px;
     padding: 0px;
+}
+
+h4 {
+    height: 80px;
+    line-height: 80px;
+    margin: 0px 0px 0px -32px;
+    padding: 0px 32px 0px 32px;
+    width: calc(100vw - 64px);
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    color: #B4B3B1;
+    background-color: #252422;
 }

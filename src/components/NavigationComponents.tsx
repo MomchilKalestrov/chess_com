@@ -51,17 +51,13 @@ class NavigationButton extends Component<any, any> {
     }
 
     private Click() {
-        console.log('!');
         for(let i: number = 0; i < NavigationButton.list.length; ++i) {
             NavigationButton.list[i].setState({ colour: none });
             Page.list[i].setState({ style: { display: 'none' } });
-            console.log(Page.list[i].state);
         }
 
         this.setState({ colour: this.colourClick });
         Page.list[this.index].setState({ style: { display: 'block' } });
-        console.log('!');
-        console.log(Page.list[this.index].state);
     }
 
     render() {

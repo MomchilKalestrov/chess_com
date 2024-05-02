@@ -5,7 +5,7 @@ import '../css/Global.css';
 
 class MenuListing extends Component<any, any> {
     render = () => 
-                <div className='MenuListing'>
+                <div className='MenuListing RippleDiff Ripple'>
                     <img src={ this.props.icon } alt='' />
                     <p>{ this.props.option }</p>
                 </div>
