@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     user-select: none;
     font-family: "Segoe UI", sans-serif;
@@ -149,4 +150,85 @@ h4 {
     font-family: "Montserrat", sans-serif;
     color: #B4B3B1;
     background-color: #252422;
+=======
+* {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.RippleDiff {
+    --color: #312d2a !important;
+}
+
+.Ripple {
+    --color: #252422;
+    background-color: transparent;
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.Ripple:hover {
+    background: radial-gradient(circle, transparent 1%, var(--color) 1%) center/15000%;
+}
+
+.Ripple:active {
+    background-color: #474644;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.Header {
+    position: fixed;
+    background-color: #252422;
+    width: 100%;
+    height: 112px;
+    margin: 0px;
+    font-size: 48px;
+    line-height: 112px;
+    font-weight: bolder;
+    color: #DEDEDE;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+img.Header {
+    width: 361px;
+    height: 100px;
+    padding: 6px calc(50% - 180.5px) 6px calc(50% - 180.5px);
+}
+
+.Page {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: calc(100vh - 112px);
+}
+
+.Container {
+    height: calc(100vh - 288px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 32px;
+    padding-top: 144px;
+    background-color: #312D2A;
+}
+
+body {
+    width: 830px;
+    height: 1670px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h4 {
+    height: 80px;
+    line-height: 80px;
+    margin: 0px 0px 0px -32px;
+    padding: 0px 32px 0px 32px;
+    width: calc(100vw - 64px);
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    color: #B4B3B1;
+    background-color: #252422;
+>>>>>>> 8d0e49efd36fe9ac3872b7ede2db404aa1905f32
 }

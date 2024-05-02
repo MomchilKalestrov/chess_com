@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .MenuListing {
     display: grid;
     margin-left: -32px;
@@ -32,4 +33,40 @@
     font-weight: bolder;
     font-family: "Montserrat", sans-serif;
     color: white;
+=======
+.MenuListing {
+    display: grid;
+    margin-left: -32px;
+    grid-template-columns: [line1] 222px [line2] calc(100% - 158px);
+    grid-template-areas: 'icon option';
+    height: 128px;
+    width: 100vw;
+}
+
+.MenuDiv {
+    width: calc(100vw - 254px);
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #252422;
+    margin-left: 190px;
+}
+
+.MenuListing img {
+    grid-area: icon;
+    width: 100%;
+    height: 100%;
+}
+
+.MenuListing p {
+    grid-area: option;
+    margin: 0px;
+    display: flex;
+    height: 128px;
+    line-height: 128px;
+    align-content: center;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+>>>>>>> 8d0e49efd36fe9ac3872b7ede2db404aa1905f32
 }
