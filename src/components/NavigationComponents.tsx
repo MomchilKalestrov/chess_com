@@ -30,13 +30,10 @@ const none: CSS.Properties = {
 
 class NavigationButton extends Component<any, any> {
     private static list: Array<NavigationButton> = new Array<NavigationButton>();
-    private static curIndex : number = 0;
-    private index : number;
     readonly colourClick: CSS.Properties = none;
 
     constructor(props: any) {
         super(props);
-        this.index = NavigationButton.curIndex++;
         this.colourClick = props.colour;
         this.state = {
             title: props.title,
@@ -57,7 +54,7 @@ class NavigationButton extends Component<any, any> {
         }
 
         this.setState({ colour: this.colourClick });
-        Page.list[this.index].setState({ style: { display: 'block' } });
+        this.state.page.setState({ style: { display: 'block' } });
     }
 
     render = () =>
@@ -70,10 +67,10 @@ class NavigationButton extends Component<any, any> {
 export class NavigationMenu extends Component<any, any> {
     render = () =>
         <div className='NavigationRoot'>
-            <NavigationButton title='Home'      colour={ green }    page={ Page.list[0] } />
-            <NavigationButton title='Puzzles'   colour={ yellow }   page={ Page.list[1] } />
-            <NavigationButton title='Learn'     colour={ blue }     page={ Page.list[2] } />
-            <NavigationButton title='Watch'     colour={ purple }   page={ Page.list[3] } />
-            <NavigationButton title='More'      colour={ white }    page={ Page.list[4] } />
+            <NavigationButton title='Home'    colour={ green }  page={ Page.list[0] } />
+            <NavigationButton title='Puzzles' colour={ yellow } page={ Page.list[1] } />
+            <NavigationButton title='Learn'   colour={ blue }   page={ Page.list[2] } />
+            <NavigationButton title='Watch'   colour={ purple } page={ Page.list[3] } />
+            <NavigationButton title='More'    colour={ white }  page={ Page.list[4] } />
         </div>
 }
