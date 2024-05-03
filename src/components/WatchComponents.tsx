@@ -7,7 +7,7 @@ export class Watch extends Component<any, any> {
         <Page>
             <Header title='Watch' />
             <Container>
-
+                <p style={{ color: 'white' }}>Yeah IDGAF about this page.</p>
             </Container>
         </Page>
 }
