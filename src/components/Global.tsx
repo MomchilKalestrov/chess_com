@@ -39,7 +39,7 @@ export class TileButton extends Component<any, any> {
     render = () =>
         this.props.titleOnly
         ?
-        <div className='TileButton Ripple'>{ this.props.title }</div>
+        <div className='TileButton Ripple' style={ { height: '112px !important' } }>{ this.props.title }</div>
         :
         <div className='TileButton Ripple'>
             <img src={ this.props.icon } alt='' />

@@ -75,7 +75,7 @@ export class Play extends Component<any, any> {
                     backgroundColor: '#252422',
                     width: 'calc(100vw - 64px)'
                 } }>
-                    <div className='TileButton Ripple TileDiff'>Play</div>
+                    <div className='TileButton Ripple TileDiff' style={ { height: '112px' } }>Play</div>
                 </div>
         </Page>
 }
